@@ -64,8 +64,17 @@
 
 
     #main {
+        padding: 2vh;
+        margin:auto;
         display: grid;
         grid-template-columns: 1fr 2fr;
+    }
+
+    #posts {
+        padding: 10vh;
+        background-color: blue;
+        margin: auto;
+        margin-right: 2vh;
     }
     </style>
 </head>
@@ -74,10 +83,7 @@
     <!-- Navbar & Socials -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>Charles Blog</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>    
+            <a class="navbar-brand" href="#"><i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>Charles Blog</a>  
             <div class="btn-group me-3" role="group" aria-label="First group">      
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">      
                     <li class="nav-item">
@@ -101,29 +107,31 @@
     <div id="main">
 
     <!-- First column User -->
-        
-            
             <div class="details">
                 <img src="https://www.gitcharles.com/static/media/rx8boi.77c7a3cb.png" alt="Charles" style="width:100%">
                 <h1>Charles B.</h1>
                 <p class="title">MembrerFirst Candidate</p>
                 <p>Front-End Developer</p>
                 <div style="margin: 24px 0;">
-                    <a href="#"><i class="fa fa-dribbble"></i></a> 
+                    <a href="#"><i class="fa fa-instagram"></i></a> 
                     <a href="#"><i class="fa fa-twitter"></i></a>  
                     <a href="#"><i class="fa fa-linkedin"></i></a>  
                     <a href="#"><i class="fa fa-facebook"></i></a> 
                 </div>
                     <p><button id="contact">Contact</button></p>
                 <div>
-                     <p><button id="add">Add Post</button></p>
+                     <p><button id="add"data-bs-toggle="modal" data-bs-target="#exampleModal">Add Post</button></p>
                 </div>
             </div>
-           
-       
-
     <!-- Blog Posts -->
         <div id="posts">
+            <h1>Charles Posts:</h1>
+            <h2>Stuff...</h2>
+            <div class="post_call">
+                
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt possimus suscipit, sapiente neque aliquid consectetur aperiam, minus earum fugiat assumenda laborum mollitia sit quos quod expedita. Similique ut nobis beatae.</p>
+            </div>
         </div>
 
     </div>
