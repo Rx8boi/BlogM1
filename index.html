@@ -7,9 +7,48 @@
     <title>MembrerFirst: Simple Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <style>
+    .details {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+    }
+
+    .title {
+        color: grey;
+        font-size: 18px;
+    }
+
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+
+    button:hover, a:hover {
+        opacity: 0.7;
+    }
+    </style>
 </head>
 
 <body>
+    <!-- Navbar & Socials -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Title: BLog</a>
@@ -34,16 +73,34 @@
             </div>  
         </div>
     </nav>
-<div id="main">
 
-    <div id="user">
+<!-- Main Section in Columns -->
+    <div id="main">
+
+    <!-- First column User -->
+        <div id="user">
+            
+            <div class="details">
+                <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+                <h1>UserID</h1>
+                <p class="title">MembrerFirst Candidate</p>
+                <p>Front-End Developer</p>
+                <div style="margin: 24px 0;">
+                    <a href="#"><i class="fa fa-dribbble"></i></a> 
+                    <a href="#"><i class="fa fa-twitter"></i></a>  
+                    <a href="#"><i class="fa fa-linkedin"></i></a>  
+                    <a href="#"><i class="fa fa-facebook"></i></a> 
+                </div>
+                <p><button>Contact</button></p>
+            </div>
+        </div>
+
+    <!-- Blog Posts -->
+        <div id="posts">
+        </div>
+
     </div>
-
-    <div id="posts">
-
-    </div>
-
-</div>
     
+ <!-- Footer --> 
 </body>
 </html>
