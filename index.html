@@ -10,11 +10,12 @@
 
     <style>
     .details {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
         max-width: 300px;
         margin: auto;
         text-align: center;
         font-family: arial;
+        align-content: center;
     }
 
     .title {
@@ -22,10 +23,9 @@
         font-size: 18px;
     }
 
-    button {
+    #contact {
         border: none;
         outline: 0;
-        display: inline-block;
         padding: 8px;
         color: white;
         background-color: #000;
@@ -34,15 +34,35 @@
         width: 100%;
         font-size: 18px;
     }
+    #add {
+        border: none;
+        outline: 0;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        
+    }
 
     a {
         text-decoration: none;
-        font-size: 22px;
+        font-size: 10px;
         color: black;
     }
 
     button:hover, a:hover {
         opacity: 0.7;
+    }
+
+
+    #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     </style>
 </head>
@@ -78,11 +98,11 @@
     <div id="main">
 
     <!-- First column User -->
-        <div id="user">
+        
             
             <div class="details">
-                <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-                <h1>UserID</h1>
+                <img src="https://www.gitcharles.com/static/media/rx8boi.77c7a3cb.png" alt="Charles" style="width:100%">
+                <h1>Charles B.</h1>
                 <p class="title">MembrerFirst Candidate</p>
                 <p>Front-End Developer</p>
                 <div style="margin: 24px 0;">
@@ -91,9 +111,13 @@
                     <a href="#"><i class="fa fa-linkedin"></i></a>  
                     <a href="#"><i class="fa fa-facebook"></i></a> 
                 </div>
-                <p><button>Contact</button></p>
+                    <p><button id="contact">Contact</button></p>
+                <div>
+                     <p><button id="add">Add Post</button></p>
+                </div>
             </div>
-        </div>
+           
+       
 
     <!-- Blog Posts -->
         <div id="posts">
