@@ -72,11 +72,27 @@
 
     #blog {
         padding: 10vh;
-        background-color: yellow;
-        margin: auto;
+        /* background-color: yellow; */
+        height:800px;
         margin-right: 2vh;
+        margin-left: 2vh;
     }
 
+    #posts {
+        padding: 1vh;
+        /* background-color: white; */
+        height:600px;
+        margin-top: 2vh;
+        margin-right: 1vh;
+        margin-left:1vh;
+
+    }
+
+    #entry {
+        padding: 1vh;
+        margin-bottom: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
     
     </style>
 </head>
@@ -165,19 +181,17 @@
     <!-- Blog Posts -->
         <div id="blog">
             <h1>Charles Posts:</h1>
-            <h2>Stuff...</h2>
-            <div class="post_call">
-                <ul id="posts">
-                    <li>Title: Alpha, body: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea vel cum facilis exercitationem non corporis veniam. Inventore nihil mollitia error exercitationem impedit a eveniet placeat reiciendis adipisci ipsum, reprehenderit alias.</li>
-                    <li>Title: Beta, body: nventore nihil mollitia error exercitationem impedit a eveniet placeat reiciendis adipisci ipsum, reprehenderit alias. </li>
+            <div class="post_call ">
+                <ul id="posts" class="overflow-auto">
+                    <!-- <li>Title: Alpha, body: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea vel cum facilis exercitationem non corporis veniam. Inventore nihil mollitia error exercitationem impedit a eveniet placeat reiciendis adipisci ipsum, reprehenderit alias.</li>
+                    <li>Title: Beta, body: nventore nihil mollitia error exercitationem impedit a eveniet placeat reiciendis adipisci ipsum, reprehenderit alias. </li> -->
                 </ul>
             </div>
         </div>
-
     </div>
     
  <!-- Footer --> 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- <script src="/index.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
