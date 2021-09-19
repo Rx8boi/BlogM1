@@ -59,7 +59,7 @@
     }
 
     button:hover, a:hover {
-        opacity: 0.7;
+        opacity: 0.3;
     }
 
 
@@ -70,12 +70,14 @@
         grid-template-columns: 1fr 2fr;
     }
 
-    #posts {
+    #blog {
         padding: 10vh;
-        background-color: blue;
+        background-color: yellow;
         margin: auto;
         margin-right: 2vh;
     }
+
+    
     </style>
 </head>
 
@@ -110,7 +112,7 @@
             <div class="details">
                 <img src="https://www.gitcharles.com/static/media/rx8boi.77c7a3cb.png" alt="Charles" style="width:100%">
                 <h1>Charles B.</h1>
-                <p class="title">MembrerFirst Candidate</p>
+                <p class="title">MembersFirst Candidate</p>
                 <p>Front-End Developer</p>
                 <div style="margin: 24px 0;">
                     <a href="#"><i class="fa fa-instagram"></i></a> 
@@ -120,11 +122,11 @@
                 </div>
                     <p><button id="contact">Contact</button></p>
                 <div>
-                     <p><button id="add"data-bs-toggle="modal" data-bs-target="#addModal">Add Post</button></p>
+                     <p><button id="add" data-bs-toggle="modal" data-bs-target="#addModal">Add Post</button></p>
 
                      <!-- Add Post Modal -->
                      <div class="modal fade" id="addModal" tabindex="-1" aria-labelby="addModalLabel" aria-hidden="true">
-                         <div class="modal-dialog">
+                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel">New Blog Post</h5>
@@ -135,7 +137,7 @@
                                     <form class="row g-3">
                                         <div class="col-md-4">
                                             <label for="validationDefault01" class="form-label">Title </label>
-                                            <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+                                            <input type="text" class="form-control" id="validationDefault01" required>
                                         </div>
                                     </br>
                                         <div class="col-md-8">
@@ -151,7 +153,7 @@
                                         </div>
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>    
-                                    <button class="btn btn-primary" type="submit">Add Post</button>
+                                    <button class="btn btn-dark" type="submit">Submit</button>
                                 </div>
                             </form>
                                 </div>
@@ -161,18 +163,20 @@
                 </div>
             </div>
     <!-- Blog Posts -->
-        <div id="posts">
+        <div id="blog">
             <h1>Charles Posts:</h1>
             <h2>Stuff...</h2>
             <div class="post_call">
-                
-                
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt possimus suscipit, sapiente neque aliquid consectetur aperiam, minus earum fugiat assumenda laborum mollitia sit quos quod expedita. Similique ut nobis beatae.</p>
+                <ul id="posts">
+                    <li>Title: Alpha, body: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea vel cum facilis exercitationem non corporis veniam. Inventore nihil mollitia error exercitationem impedit a eveniet placeat reiciendis adipisci ipsum, reprehenderit alias.</li>
+                    <li>Title: Beta, body: nventore nihil mollitia error exercitationem impedit a eveniet placeat reiciendis adipisci ipsum, reprehenderit alias. </li>
+                </ul>
             </div>
         </div>
 
     </div>
     
  <!-- Footer --> 
+ <script src="/index.js"></script>
 </body>
 </html>
