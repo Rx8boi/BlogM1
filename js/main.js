@@ -29,6 +29,9 @@ $(function () {
     }
   });
 
+  $.ajax({
+    type: "POST"
+  })
 
 
 });
