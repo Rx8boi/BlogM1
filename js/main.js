@@ -24,6 +24,9 @@ $(function () {
         );
       });
     },
+    error: function () {
+      alert('Error: Posts not found!');
+    }
   });
 
 
