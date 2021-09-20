@@ -39,14 +39,16 @@ $(function () {
       userId: 1,
     };
 
+    console.log(post);
+
     $.ajax({
       type: 'POST',
       url: "https://jsonplaceholder.typicode.com/posts?userId=1",
       data: post,
       success: function (newPost) {
-        $posts.append(
-          "<li id='entry'><a href='#' target='_blank'><h4>" + newPost.title + "</h4></a></br><p>" + newPost.body.substring(0, 15)+'...' + "</p></li>"
+        $posts.append("<li id='entry'><a href='#' target='_blank'><h4>" + newPost.title + "</h4></a></br><p>" + newPost.body.substring(0, 15) + '...' + "</p></li>"
         );
+        $('.modal').modal('hide')
       }
     })
     

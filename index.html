@@ -173,7 +173,7 @@
                                         
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>    
-                                    <button class="btn btn-dark" type="submit" id="add-post" >Submit</button>
+                                    <button class="btn btn-dark" type="button" id="add-post" disabled="disabled">Submit</button>
                                 </div>
                             </form>
                                 </div>
@@ -197,5 +197,25 @@
  <!-- Footer --> 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
+
+<script type="text/javascript">
+    (function(){
+    $('form > div> input').keyup(function () {
+  var empty = false;
+  $('form > div> input').each(function () {
+    if ($(this).val() == '') {
+      empty = true;
+    }
+  });
+  if (empty) {
+    $('#add-post').attr('disabled', 'disabled');
+    
+  }
+  else {
+    $('#add-post').removeAttr('disabled');
+  }
+})
+    })();
+    </script>
 </body>
 </html>
