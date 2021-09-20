@@ -199,23 +199,23 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
 <script type="text/javascript">
-    (function(){
-    $('form > div> input').keyup(function () {
-  var empty = false;
-  $('form > div> input').each(function () {
-    if ($(this).val() == '') {
-      empty = true;
-    }
-  });
-  if (empty) {
-    $('#add-post').attr('disabled', 'disabled');
+//     (function(){
+//     $('form > div> input').keyup(function () {
+//   var empty = false;
+//   $('form > div> input').each(function () {
+//     if ($(this).val() == '') {
+//       empty = true;
+//     }
+//   });
+//   if (empty) {
+//     $('#add-post').attr('disabled', 'disabled');
     
-  }
-  else {
-    $('#add-post').removeAttr('disabled');
-  }
-})
-    })();
+//   }
+//   else {
+//     $('#add-post').removeAttr('disabled');
+//   }
+// })
+//     })();
     </script>
 </body>
 </html>

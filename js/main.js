@@ -56,3 +56,20 @@ $(function () {
 
 
 });
+
+// Disable Submit button if text fields are empty
+   (function () {
+     $("form > div> input").keyup(function () {
+       var empty = false;
+       $("form > div> input").each(function () {
+         if ($(this).val() == "") {
+           empty = true;
+         }
+       });
+       if (empty) {
+         $("#add-post").attr("disabled", "disabled");
+       } else {
+         $("#add-post").removeAttr("disabled");
+       }
+     });
+   })();
