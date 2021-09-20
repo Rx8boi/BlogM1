@@ -1,0 +1,92 @@
+    .details {
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        align-content: center;
+    }
+
+    .title {
+        color: grey;
+        font-size: 18px;
+    }
+
+    #contact {
+        border: none;
+        outline: 0;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #add {
+        border: none;
+        outline: 0;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 23px;
+        color: black;
+    }
+
+    button:hover, a:hover {
+        opacity: 0.3;
+    }
+
+
+    #main {
+        padding: 2vh;
+        margin:auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #blog {
+        padding: 10vh;
+        /* background-color: yellow; */
+        height:800px;
+        margin-right: 2vh;
+        margin-left: 2vh;
+    }
+
+    #posts {
+        padding: 1vh;
+        /* background-color: white; */
+        height:600px;
+        margin-top: 2vh;
+        margin-right: 1vh;
+        margin-left:1vh;
+
+    }
+
+    #entry {
+        padding: 1vh;
+        margin-bottom: 12px;
+        margin-right: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 3px 13px rgba(0, 0, 0, 0.5);
+        transition: all 0.5s ease-in-out;
+        background-color: rgba(248, 249, 249, 0.2);
+    }
+
+    #entry:hover {
+    transform: scale(1.02);
+    transition: all 0.5s ease-in-out;
+    }
+    
