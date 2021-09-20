@@ -114,16 +114,16 @@
             <div class="btn-group me-3" role="group" aria-label="First group">      
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">      
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-instagram"></i></a>
+                    <a class="nav-link active" aria-current="page" href="https://www.instagram.com" target='_blank'><i class="fa fa-instagram"></i></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-twitter"></i></a> 
+                    <a class="nav-link active" aria-current="page" ref="https://www.twitter.com" target='_blank'><i class="fa fa-twitter"></i></a> 
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-linkedin"></i></a> 
+                    <a class="nav-link active" aria-current="page" href="https://www.linkedin.com" target='_blank'><i class="fa fa-linkedin"></i></a> 
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-facebook"></i></a> 
+                    <a class="nav-link active" aria-current="page" href="https://www.facebook.com" target='_blank'><i class="fa fa-facebook"></i></a> 
                     </li>
                 </ul>   
             </div>  
@@ -140,12 +140,12 @@
                 <p class="title">MembersFirst Candidate</p>
                 <p>Front-End Developer</p>
                 <div style="margin: 24px 0;">
-                    <a href="#"><i class="fa fa-instagram"></i></a> 
-                    <a href="#"><i class="fa fa-twitter"></i></a>  
-                    <a href="#"><i class="fa fa-linkedin"></i></a>  
-                    <a href="#"><i class="fa fa-facebook"></i></a> 
+                    <a href="https://www.instagram.com" target='_blank'><i class="fa fa-instagram"></i></a> 
+                    <a href="https://www.twitter.com" target='_blank'><i class="fa fa-twitter"></i></a>  
+                    <a href="https://www.linkedin.com" target='_blank'><i class="fa fa-linkedin"></i></a>  
+                    <a href="https://www.facebook.com" target='_blank'><i class="fa fa-facebook"></i></a> 
                 </div>
-                    <p><button id="contact">Contact</button></p>
+                    
                 <div>
                      <p><button id="add" data-bs-toggle="modal" data-bs-target="#addModal">Add Post</button></p>
 
@@ -159,15 +159,17 @@
                                 </div>
                                 <div class="modal-body">
                                     <!-- Modal Form w/ Validation -->
-                                    <form class="row g-3">
+                                    <form class="row g-3 was-validated">
                                         <div class="col-md-4">
                                             <label for="title" class="form-label">Title </label>
                                             <input type="text" class="form-control" id="title" required>
-                                        </div>
+                                        
+                                        <div class="invalid-feedback">MUST include "TITLE"</div></div>
                                     </br>
                                         <div class="col-md-8">
                                             <label for="body" class="form-label">Body</label>
-                                            <textarea type="text" class="form-control" id="body" required></textarea>
+                                            <input type="text" class="form-control" id="body" required>
+                                        <div class="invalid-feedback">MUST include "BODY"</div>
                                         </div>                                        
                                         
                                   <div class="modal-footer">
